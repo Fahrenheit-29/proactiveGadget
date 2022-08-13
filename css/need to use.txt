@@ -1,0 +1,10 @@
+E91E22
+101010
+
+Laptop Create your Future
+
+font pair 
+oxygen + maven pro
+
+monserat +  merriweather
+merriweather + oswald
