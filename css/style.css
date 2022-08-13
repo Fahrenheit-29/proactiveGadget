@@ -66,6 +66,7 @@
  header nav {
      width: 50%;
      margin-top: 20px;
+     position: relative;
  }
  
  header label {
@@ -730,7 +731,8 @@
      header nav {
          position: absolute;
          top: 83%;
-         right: -100%;
+         left: -100%;
+         right: 0;
          width: 300px;
          background-color: #141615;
          border-bottom: 2.5px solid #E91E22;
@@ -749,7 +751,7 @@
          display: block;
      }
      header nav.menushow {
-         right: 0;
+         left: 0;
          transition: ease-in 0.7s;
      }
      .main-content h1 {
@@ -960,7 +962,7 @@
      header nav {
          position: absolute;
          top: 83%;
-         right: -100%;
+         left: -100%;
          width: 300px;
          background-color: #141615;
          border-bottom: 2.5px solid #E91E22;
@@ -984,7 +986,7 @@
          display: block;
      }
      header nav.menushow {
-         right: 0;
+         left: 0;
          transition: ease-in 0.7s;
      }
      .main-section {
