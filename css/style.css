@@ -18,9 +18,6 @@
  
  html {
      scroll-behavior: smooth;
- }
- 
- body {
      overflow-x: hidden;
  }
  
@@ -45,9 +42,11 @@
      padding: 15px 6%;
      border-bottom: 2.5px solid #E91E22;
      font-family: 'Maven Pro', sans-serif;
+     position: fixed;
+     top: 0;
+     left: 0;
+     right: 0;
      z-index: 1000;
-     position: sticky;
-     top: 0px;
  }
  
  header .logo img {
@@ -64,9 +63,7 @@
  }
  
  header nav {
-     width: 50%;
      margin-top: 20px;
-     position: relative;
  }
  
  header label {
@@ -504,12 +501,12 @@
  }
  
  @media screen and (min-width: 769px) and (max-width: 992px) {
-     /* header nav {
+     header nav {
          position: absolute;
          top: 83%;
          right: -100%;
          width: 300px;
-         background-color: black;
+         background-color: #141615;
          border-bottom: 2.5px solid #E91E22;
          height: calc(100vh - 10rem);
      }
@@ -524,59 +521,25 @@
      header label {
          margin: 20px 0px;
          display: block;
+         color: whitesmoke;
      }
      header nav.menushow {
          right: 0;
          transition: ease-in 0.7s;
-     } */
+     }
      header {
          background-color: #141615;
          display: flex;
          justify-content: space-between;
          align-content: center;
-         padding: 15px 4%;
+         padding: 15px 6%;
          border-bottom: 2.5px solid #E91E22;
          font-family: 'Maven Pro', sans-serif;
-         z-index: 1000;
-         position: sticky;
-         top: 0px;
-     }
-     header nav ul li {
-         list-style-type: none;
-         margin: 10px 5px;
-         display: inline-block;
-     }
-     header nav {
-         width: 65%;
-         margin-top: 20px;
-     }
-     header label {
-         color: whitesmoke;
-         display: none;
-     }
-     header nav ul li a {
-         cursor: pointer;
-         color: white;
-         display: block;
-         font-size: 1rem;
-         letter-spacing: 2px;
-         text-decoration: none;
-         position: relative;
-         padding-bottom: 5px;
-     }
-     header nav ul li a::after {
-         content: "";
-         width: 100%;
-         height: .075rem;
-         background-color: #E91E22;
-         position: absolute;
-         bottom: 0;
+         position: fixed;
+         top: 0;
          left: 0;
-         transform: scale(0, 1);
-         transition: transform ease-in 0.4s;
-     }
-     header nav ul li a:hover::after {
-         transform: scale(1, 1);
+         right: 0;
+         z-index: 1000;
      }
      .dropdown-content {
          display: none;
@@ -731,7 +694,7 @@
      header nav {
          position: absolute;
          top: 83%;
-         left: -100%;
+         right: -100%;
          width: 300px;
          background-color: #141615;
          border-bottom: 2.5px solid #E91E22;
@@ -750,7 +713,7 @@
          display: block;
      }
      header nav.menushow {
-         left: 0;
+         right: 0;
          transition: ease-in 0.7s;
      }
      .main-content h1 {
@@ -961,7 +924,7 @@
      header nav {
          position: absolute;
          top: 83%;
-         left: -100%;
+         right: -100%;
          width: 300px;
          background-color: #141615;
          border-bottom: 2.5px solid #E91E22;
@@ -985,7 +948,7 @@
          display: block;
      }
      header nav.menushow {
-         left: 0;
+         right: 0;
          transition: ease-in 0.7s;
      }
      .main-section {
